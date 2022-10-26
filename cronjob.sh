@@ -1,0 +1,1 @@
+00 12 * * * sh /home/user/findfile.sh > /home/user/log.txt

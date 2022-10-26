@@ -1,0 +1,7 @@
+How to Create and Restore Incremental Backups with Tar on Linux
+1-mkdir -p /backup/data
+2- cd /backup/data
+3-cd /backup/data cat /etc/sysctl.conf > test1.txt cat /etc/sysctl.conf > test2.tx
+4-cd /backup tar --verbose --verbose --create --gzip --listed-incremental=/backup/data.sngz --file=/backup/data.tgz data
+5-tar --list --incremental --verbose --verbose --file /backup/data.tgz
+rsync -a --delete --password-file=/etc/secret.passwd rsync-user@source-server-ip::data /opt/backup/full/ --backup --backup-dir=/opt/backup/increment/`date +%Y-%m-%d`/
