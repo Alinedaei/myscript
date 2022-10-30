@@ -5,7 +5,7 @@ wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-ke
 echo "deb https://dl.bintray.com/rabbitmq-erlang/debian focal erlang-22.x" | sudo tee /etc/apt/sources.list.d/rabbitmq.list
 sudo apt-get install rabbitmq-server -y --fix-missing
 sudo rabbitmqctl add_user admin R@bbitmQ123
-echo "user:admin,passwd:R@bbitmQ"
+echo "user:admin,passwd:R@bbitmQ123"
 sudo systemctl status rabbitmq-server
 systemctl is-enabled rabbitmq-server.service
 sudo systemctl enable rabbitmq-server
