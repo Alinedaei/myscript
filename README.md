@@ -1,1 +1,1 @@
-# my-test
+# my-script

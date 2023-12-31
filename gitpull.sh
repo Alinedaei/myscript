@@ -54,7 +54,7 @@ sudo nginx -s reload
 
 sudo tee /usr/share/nginx/modisehprv/modisehprv.sh <<EOF
 #!/bin/bash
-cd /usr/share/nginx//modisehprv/modiseh_warehouseDashboard
+cd /usr/share/nginx/modisehprv/modiseh_warehouseDashboard
 git pull origin master
 yarn run build
  mv warehouse warehouse-publish  && mv warehouse1 warehouse
